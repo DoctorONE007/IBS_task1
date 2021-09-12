@@ -88,7 +88,7 @@ public class Box implements SweetBox {
         if (sweets.isEmpty())
             System.out.println("Коробка оптимизирована относительно стоимости - коробка пустая");
         else {
-            if (sumprise < min)
+            if (sumweight < min)
                 System.out.println("Коробка оптимизирована относительно стоимости");
             else {
                 deleteByIndex(sweets.indexOf(Collections.min(sweets, Comparator.comparing(Sweet::getPrice))));
